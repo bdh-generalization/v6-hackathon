@@ -10,3 +10,15 @@ We are going to develop 3 types of algorithms for vantage6 and test them out on 
 - A simple parallel algorithm with no communication between nodes
 - An algorithm that consists of 2 parts, communicating with the legacy method
 - An algorithm with node-to-node communication.
+
+## Algorithm cookiecutter
+There is a [cookiecutter for vantage6 algorithms](https://github.com/vantage6/cookiecutter_algorithm_python) that can help you create your own algorithm.
+Follow the instructions in the repo to start your own. Name the algorithm and the repo `v6_hackathon_[YOUR_NAME]`. Adding your name will make sure you won't overwrite your colleagues algorithm in the docker registry later.
+
+## Simple parallel algorithm
+
+
+## 2 part algorithm
+
+## Algorithm with node-to-node communication
+For this algorithm we have to make sure that vpn is correctly set up.
