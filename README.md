@@ -5,6 +5,9 @@
 - Make sure you have the newest version of vantage6
 - You should have access to the [harbor server](https://harbor.carrier-mu.src.surf-hosted.nl/)
 
+## Preparation
+Let's create a fresh collaboration and and 3 nodes to work on.
+
 ## Introduction
 We are going to develop 3 types of algorithms for vantage6 and test them out on our local system.
 - A simple parallel algorithm with no communication between nodes
