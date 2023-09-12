@@ -62,7 +62,7 @@ docker build -t some_name .
 ## Quick test
 If you are now trying to run our docker image it will give an error because it is not running in the vantage6 ecosystem. You should get the following:
 ```shell
-docker run some_name
+>> docker run some_name
 
 Traceback (most recent call last):
   File "<string>", line 1, in <module>
