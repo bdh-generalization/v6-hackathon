@@ -24,6 +24,16 @@ This can be done automatically as follows:
 - Execute `poetry init`
 - Follow the wizard
 
+Then install the dependencies with
+```shell
+poetry install
+```
+
+## Building our algorithm container
+```shell
+docker build -t some_name .
+```
+
 
 ## Simple parallel algorithm
 
