@@ -17,7 +17,12 @@ We are going to develop 3 types of algorithms for vantage6 and test them out on 
 There is a [cookiecutter for vantage6 algorithms](https://github.com/vantage6/cookiecutter_algorithm_python) that can help you create your own algorithm.
 Follow the instructions in the repo to start your own. Name the algorithm and the repo `v6_hackathon_[YOUR_NAME]`. Adding your name will make sure you won't overwrite your colleagues algorithm in the docker registry later.
 
-Personally I prefer to use poetry to manage dependencies. In order to use this, you need to change the dockerfile a bit.
+### Using poetry
+Personally I prefer to use poetry to manage dependencies. In order to use this, you will need to replace the requirements.txt with a pyproject.toml.
+This can be done automatically as follows:
+- Go into the folder you have just created with the cookiecutter
+- Execute `poetry init`
+- Follow the wizard
 
 
 ## Simple parallel algorithm
