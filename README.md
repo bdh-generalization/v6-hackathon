@@ -104,6 +104,9 @@ Important functions:
 - `client.post_task('name doesn't matter', 'test', collaboration_id=client.collaboration_id,
                             input_={'method': 'count_records'}, organization_ids=org_ids)`
 
+If you want to call this algorithm you should just call it for _one_ single organization. This one will be running the primary (master) container.
+
+In your input you need to indicate it is a master algorithm with `{"method": "my_method", "master": True}`
 
 ## Algorithm with node-to-node communication
 For this algorithm we have to make sure that vpn is correctly set up.
