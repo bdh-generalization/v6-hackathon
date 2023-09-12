@@ -26,6 +26,29 @@ This can be done automatically as follows:
 
 In our case, make sure you have `vantage6-client = "3.11.0"`
 
+Example `pyproject.toml`:
+```toml
+[tool.poetry]
+name = "poetry-algorithm"
+version = "0.1.0"
+description = ""
+authors = ["Djura Smits <djura.smits@gmail.com>"]
+license = "Apache 2.0"
+readme = "README.md"
+packages = [{include = "poetry_algorithm"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"                                                                                                                                                                            
+vantage6-client = "3.11.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+```
+
 Then install the dependencies with
 ```shell
 poetry install
