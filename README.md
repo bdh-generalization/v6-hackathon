@@ -120,3 +120,23 @@ info('Some information')
 
 ## Algorithm with node-to-node communication
 For this algorithm we have to make sure that vpn is correctly set up.
+
+### Setting up vpn on the vantage6 server
+We need to point to the vpn server from our vantage6 server. You can see how to configure it in the [server configuration documentation](https://docs.vantage6.ai/en/main/server/configure.html).
+The most important parts are these:
+```yaml
+    vpn_server:
+        # the URL of your VPN server
+        url: https://your-vpn-server.ext
+
+        # OATH2 settings, make sure these are the same as in the
+        # configuration file of your EduVPN instance
+        redirect_url: http://localhost
+        client_id: your_VPN_client_user_name
+        client_secret: your_VPN_client_user_password
+
+        # Username and password to acccess the EduVPN portal
+        portal_username: your_eduvpn_portal_user_name
+        portal_userpass: your_eduvpn_portal_user_password
+```
+We will use an existing eduvpn server.
