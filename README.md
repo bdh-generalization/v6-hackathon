@@ -83,7 +83,7 @@ KeyError: 'INPUT_FILE'
 Algorithm stub:
 
 
-```
+```python
 import pandas as pd
 from vantage6.client import ContainerClient
 
