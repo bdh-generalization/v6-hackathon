@@ -159,3 +159,9 @@ vnode start
 vnode start
 vnode start
 ```
+
+### Checking the connections
+You can check the connections by using the [n2n-diagnostics algorithm](https://github.com/vantage6/v6-diagnostics)
+
+Check the [v6 docs](https://docs.vantage6.ai/en/main/algorithms/concepts.html#networking) for some info on developing with n2n communication.
+Check the [containerclient api](https://docs.vantage6.ai/en/main/function-docs/client.html#vantage6.client.ContainerClient) to find the right functions for n2n.
