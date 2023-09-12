@@ -108,5 +108,15 @@ If you want to call this algorithm you should just call it for _one_ single orga
 
 In your input you need to indicate it is a master algorithm with `{"method": "my_method", "master": True}`
 
+## Debugging
+If you want to print some info to debug your algorithm you can use the follwing:
+```python
+from vantage6.common import info
+```
+
+```python
+info('Some information')
+```
+
 ## Algorithm with node-to-node communication
 For this algorithm we have to make sure that vpn is correctly set up.
