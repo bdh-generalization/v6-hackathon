@@ -24,6 +24,8 @@ This can be done automatically as follows:
 - Execute `poetry init`
 - Follow the wizard
 
+In our case, make sure you have `vantage6-client = "3.11.0"`
+
 Then install the dependencies with
 ```shell
 poetry install
