@@ -94,6 +94,16 @@ def RPC_mean(data: pd.DataFrame, *args, **kwargs):
 ```
 
 ## 2 part algorithm
+Function stub:
+```python
+def count_total_records(client: ContainerClient, data: pd.DataFrame, *args, **kwargs)
+  
+```
+Important functions:
+- `client.get_organizations_in_my_collaboration()`
+- `client.post_task('name doesn't matter', 'test', collaboration_id=client.collaboration_id,
+                            input_={'method': 'count_records'}, organization_ids=org_ids)`
+
 
 ## Algorithm with node-to-node communication
 For this algorithm we have to make sure that vpn is correctly set up.
