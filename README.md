@@ -140,3 +140,22 @@ The most important parts are these:
         portal_userpass: your_eduvpn_portal_user_password
 ```
 We will use an existing eduvpn server.
+
+### Setting up vpn on the vantage6 node
+You need to add the vpn subnet to your node confguration (see [node admin docs](https://docs.vantage6.ai/en/main/node/configure.html))
+
+After the configurations have been changed, restart the vantage6 server and all nodes:
+
+```shell
+# From the docker-compose directory
+docker-compose down
+
+vnode stop --all
+
+docker-compose up -d
+
+# Start all nodes
+vnode start
+vnode start
+vnode start
+```
