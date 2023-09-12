@@ -80,6 +80,18 @@ KeyError: 'INPUT_FILE'
 
 ## Simple parallel algorithm
 
+Algorithm stub:
+
+
+```
+import pandas as pd
+from vantage6.client import ContainerClient
+
+
+def RPC_mean(data: pd.DataFrame, *args, **kwargs):
+  pass
+
+```
 
 ## 2 part algorithm
 
