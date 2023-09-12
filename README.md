@@ -59,6 +59,24 @@ poetry install
 docker build -t some_name .
 ```
 
+## Quick test
+If you are now trying to run our docker image it will give an error because it is not running in the vantage6 ecosystem. You should get the following:
+```shell
+docker run some_name
+
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+info > wrapper for poetry_algorithm
+  File "/usr/local/lib/python3.10/site-packages/vantage6/tools/wrapper.py", line 150, in docker_wrapper
+    wrapper.wrap_algorithm(module, load_data, use_new_client, log_traceback)
+  File "/usr/local/lib/python3.10/site-packages/vantage6/tools/wrapper.py", line 278, in wrap_algorithm
+    input_file = os.environ["INPUT_FILE"]
+  File "/usr/local/lib/python3.10/os.py", line 680, in __getitem__
+    raise KeyError(key) from None
+KeyError: 'INPUT_FILE'
+
+```
+
 
 ## Simple parallel algorithm
 
